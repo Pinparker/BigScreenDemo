@@ -1,1 +1,0 @@
-var e=`/BigScreenDemo/assets/sc_map-ChNJ4iCw.png`,t=`/BigScreenDemo/assets/sc_normal_map-BnEqFUtn.png`;export{e as n,t};
