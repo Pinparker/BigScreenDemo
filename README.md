@@ -18,9 +18,13 @@
 
 ## 预览
 
-| ![demo1](./public/demo_0.jpg)                           | ![demo2](./public/demo_1.jpg)                           |
+| [预览地址](https://pinparker.github.io/BigScreenDemo/#/demo0) | [预览地址](https://pinparker.github.io/BigScreenDemo/#/demo1) |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![demo1](./public/demo_0.jpg)                                 | ![demo2](./public/demo_1.jpg)                                 |
 
-| ![demo3](./public/demo_2.jpg)                           | ![demo4](./public/demo_3.jpg)                           |
+| [预览地址](https://pinparker.github.io/BigScreenDemo/#/demo2) | [预览地址](https://pinparker.github.io/BigScreenDemo/#/demo3) |
+| ------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![demo3](./public/demo_2.jpg)                                 | ![demo4](./public/demo_3.jpg)                                 |
 
 ## 功能特性
 
