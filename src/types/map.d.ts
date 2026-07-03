@@ -26,7 +26,7 @@ export interface GeoJSONGeometry {
  */
 export interface GeoJSONFeature<
   P = Record<string, unknown>,
-  G = GeoJSONGeometry
+  G = GeoJSONGeometry,
 > {
   type: "Feature";
   geometry: G;
@@ -38,7 +38,7 @@ export interface GeoJSONFeature<
  */
 export interface GeoJSONFeatureCollection<
   P = Record<string, unknown>,
-  G = GeoJSONGeometry
+  G = GeoJSONGeometry,
 > {
   type: "FeatureCollection";
   features: GeoJSONFeature<P, G>[];
