@@ -6,6 +6,10 @@ import { resolve } from "node:path";
 export default defineConfig({
   plugins: [react()],
   base: "/BigScreenDemo/",
+  build: {
+    outDir: "docs",
+    sourcemap: false,
+  },
   resolve: {
     alias: {
       "@": resolve("src"),
