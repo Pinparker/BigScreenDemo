@@ -32,7 +32,7 @@ const CanvasWrapper = styled.div`
   height: 100%;
 `;
 
-useEnvironment.preload({ files: "/sc-datav/hdr/venice_sunset_1k.hdr" });
+useEnvironment.preload({ files: "/BigScreenDemo/hdr/venice_sunset_1k.hdr" });
 
 export default function Demo2() {
   return (
@@ -44,7 +44,8 @@ export default function Demo2() {
           <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [-10, 5, 12], fov: 25 }}>
+            camera={{ position: [-10, 5, 12], fov: 25 }}
+          >
             <Suspense fallback={null}>
               <Stage
                 intensity={0.5}
@@ -54,7 +55,8 @@ export default function Demo2() {
                   intensity: Math.PI,
                 }}
                 center={{ disableZ: true }}
-                adjustCamera={false}>
+                adjustCamera={false}
+              >
                 <Model />
               </Stage>
             </Suspense>
@@ -79,7 +81,7 @@ export default function Demo2() {
             <Environment
               background
               blur={0.8}
-              files="/sc-datav/hdr/venice_sunset_1k.hdr"
+              files="/BigScreenDemo/hdr/venice_sunset_1k.hdr"
             />
 
             <OrbitControls

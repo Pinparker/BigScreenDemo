@@ -34,7 +34,7 @@ class BentPlaneGeometry extends PlaneGeometry {
     width: number,
     height: number,
     widthSegments?: number,
-    heightSegments?: number
+    heightSegments?: number,
   ) {
     super(width, height, widthSegments, heightSegments);
     let p = this.parameters;
@@ -145,7 +145,7 @@ function Carousel({ radius = 1.4, count = 8 }) {
   return Array.from({ length: count }, (_, i) => (
     <Card
       key={i}
-      url={`/sc-datav/demo_${i % 4}.jpg`}
+      url={`/BigScreenDemo/demo_${i % 4}.jpg`}
       position={[
         Math.sin((i / count) * Math.PI * 2) * radius,
         0,
@@ -182,13 +182,13 @@ function Card(props: ComponentProps<typeof Image>) {
     ref.current.material.radius = MathUtils.lerp(
       ref.current.material.radius!,
       targetRadius.current,
-      1 - Math.exp(-8 * delta)
+      1 - Math.exp(-8 * delta),
     );
 
     ref.current.material.zoom = MathUtils.lerp(
       ref.current.material.zoom!,
       targetZoom.current,
-      1 - Math.exp(-8 * delta)
+      1 - Math.exp(-8 * delta),
     );
   });
 
@@ -211,7 +211,8 @@ function Card(props: ComponentProps<typeof Image>) {
         targetZoom.current = 1.5;
         document.body.style.cursor = "auto";
       }}
-      {...props}>
+      {...props}
+    >
       <BentPlaneGeometryEl args={[0.1, 1, 1, 20, 20]} />
     </Image>
   );
