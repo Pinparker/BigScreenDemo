@@ -3,7 +3,7 @@ name: Datav Demo
 on:
   push:
     tags:
-      - 'v*'  # 仅当推送 v 开头的 tag 时触发，例如 v1.0.0
+      - "v*" # 仅当推送 v 开头的 tag 时触发，例如 v1.0.0
 
 permissions:
   contents: write
@@ -19,13 +19,13 @@ jobs:
       - name: 📦 Install pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10  # 可以指定版本
+          version: 10 # 可以指定版本
 
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: 📥 Install dependencies
         run: pnpm install --frozen-lockfile
