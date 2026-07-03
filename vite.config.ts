@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "BigScreenDemo/",
+  base: "/BigScreenDemo/",
   resolve: {
     alias: {
       "@": resolve("src"),
